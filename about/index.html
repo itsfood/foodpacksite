@@ -1,61 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="img/site/logo.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>food pack</title>
+    <link rel="icon" href="../img/site/logo.ico">
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Place your stylesheet here-->
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- jsCookie -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Personal CSS -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <!-- Icon Kit from Font Awesome -->
+    <script src="https://kit.fontawesome.com/32cc714e85.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <img src="img/site/logo.png" class="round click" width="60" onclick="window.location.href='index.html'">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="navbar-collapse collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="download.html">Download</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="feedback.html">Feedback</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="updates.html">Updates</a>
-                </li>
-            </ul>
-        </div>
+    <nav id="navbar" class="navbar navbar-expand-lg shadow fixed-top">
+        <img class="navbar-brand" src="../img/site/logo.png" height="110px" width="100px" draggable="false">
+        <ul class="nav" style="position: absolute">
+            <li class="nav-item">
+                <a class="nav-link" href="../">
+                    <i class="fa fa-home" id="navbar-home"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="../about/">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../download/">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../feedback/">
+                    <i class="fa fa-comment" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../updates/">
+                    <i class="fa fa-newspaper" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
     </nav>
     <main role="main" class="container">
-        <div class="text-center pt-4 pb-2">
+        <div class="text-center mt-5 pt-5 mb-4">
             <h1>about the food pack&trade;</h1>
             <p class="lead">a resource pack by itsfood</p>
         </div>
         <div class="jumbotron bg-dark">
-            <h2>How it started</h2>
+            <h2>How it started:</h2>
             <p>I created the food pack for the community on the traves sub server over the summer of '19. It sarted as a
                 simple question in <span style="color: antiquewhite"
                     title="travescord's main sub server channel">#mc-general</span>, asking "What songs would you like
                 to see on the Minecraft discs instead of what they already are?" Many responses came in within the next
                 hour, some where similar to eachother and others a bit more obscure. I took the most suggested songs and
                 replaced all of the discs. I needed a name for this resource pack, and since it was made for the people
-                of the traves sub server, it was named the traves pack (later renamed food pack to disassociate with traves).</p>
+                of the traves sub server, it was named the traves pack (later renamed food pack to disassociate with
+                traves).</p>
         </div>
         <div class="jumbotron bg-dark">
             <h2>Where it went:</h2>
@@ -63,7 +73,8 @@
                 many things of my own. In the 2.13.0 update, I retextured bows and arrows to trumpets and notes, in
                 honor of <a style="color: antiquewhite" title="See the inspiration"
                     href="https://www.youtube.com/watch?v=WTWyosdkx44">Spooktober</a>. Before that, I created traves
-                speak (now English+). This is a whole new way of experiencing Minecraft. Subtle changes to the language of the game,
+                speak (now English+). This is a whole new way of experiencing Minecraft. Subtle changes to the language
+                of the game,
                 along with some large ones too (changing things like "Curse of Vanishing" to "Curse of a Dad getting
                 Milk"), change how you view the game. When this was added, everyone fell in love with it. Since then,
                 I've slowly kept adding and changing as I need to (typos if there are any, which there are without a
