@@ -1,4 +1,5 @@
 /* Personal CSS for the food pack website (made by itsfood) */
+
 html {
     scroll-behavior: smooth;
 }
@@ -16,31 +17,24 @@ html {
 }
 
 /* Theme */
+
 @media (prefers-color-scheme: light) {
     :root {
         --theme-web-bg: white;
+        --theme-alt-bg: #cecece;
+        
         --theme-text: black;
         --theme-color: var(--light);
         --theme-primary: var(--primary);
         --theme-alt: #3f3f3f;
-    }
-
-    .active #navbar-youtube, .nav-link:hover #navbar-youtube {
-        color: red !important;
-    }
-
-    .active #navbar-twitch, .nav-link:hover #navbar-twitch {
-        color: #6441A4 !important;
-    }
-
-    .active #navbar-discord, .nav-link:hover #navbar-discord {
-        color: #7289DA !important;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --theme-web-bg: #1a1a1a;
+        --theme-alt-bg: #2b2b2b;
+        
         --theme-text: white;
         --theme-color: var(--dark);
         --theme-primary: var(--primary);
@@ -62,6 +56,12 @@ html {
 .theme-control a:hover {
     color: var(--theme-alt);
 }
+.list-group-item {
+    color: white;
+}
+.list-group a:hover .list-group-item{
+    background: var(--theme-alt-bg);
+}
 
 /* Other Adjustments */
 
@@ -80,10 +80,10 @@ body {
 }
 
 /*Hides scrollbars on webKit browsers*/
+
 body::-webkit-scrollbar {
     display: none
 }
-
 
 nav {
     background-color: var(--theme-color);
@@ -98,6 +98,7 @@ nav {
 
 .nav-link {
     color: var(--theme-alt) !important;
+    transition: 100ms
 }
 
 .nav-link:hover {
@@ -114,7 +115,6 @@ nav {
         top: -5px !important;
         left: -5px !important;
     }
-
     .nav {
         left: 70px !important;
     }
@@ -139,21 +139,25 @@ nav {
     color: var(--theme-text) !important;
 }
 
-.nav-link #navbar-youtube,
-.nav-link #navbar-twitch,
-.nav-link #navbar-home,
-.nav-link #navbar-discord {
-    transition: 150ms ease-in;
-}
-
 a:hover {
     cursor: pointer;
+    text-decoration: none;
 }
 
-.card {
+.card, .jumbotron, li, ul {
     border: none;
     background: var(--theme-color);
+    color: var(--theme-text) !important;
 }
+
+.list-group {
+    border-radius: 5px;
+}
+
+.list-group-item {
+    background: var(--theme-color);
+}
+
 .non-interactive {
     filter: grayscale(1);
     pointer-events: none;
@@ -195,6 +199,7 @@ a:hover {
 }
 
 /* Animations */
+
 .pulse {
     animation: pulse 1500ms ease-out infinite;
 }
@@ -207,11 +212,9 @@ a:hover {
     0% {
         transform: scale(1);
     }
-
     50% {
         transform: scale(1.1);
     }
-
     100% {
         transform: scale(1);
     }
@@ -229,7 +232,6 @@ a:hover {
     0% {
         transform: scale(1);
     }
-
     100% {
         transform: scale(1.1);
     }
