@@ -1,0 +1,49 @@
+body {
+    background-color: #212529;
+    color: white;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none
+}
+
+img.round {
+    border-radius: 100%;
+}
+
+.click {
+    background-color: #626b7480 !important;
+    transition: 0.3s;
+}
+
+.click:hover {
+    cursor: pointer;
+    background-color: #212529 !important;
+    border-color: white
+}
+
+.helpers {
+    background-color: #626b7480 !important;
+    transition: 0.3s;
+}
+
+.helpers:hover {
+    background-color: #212529 !important;
+    border-color: white
+}
+
+.noDecor:hover {
+    text-decoration: none
+}
+
+.newYears {
+    background-image: url("img/firework.gif");
+    background-position: center;
+    background-size: cover
+}
+
+.noclick {
+    filter: grayscale(1);
+    pointer-events: none;
+}
